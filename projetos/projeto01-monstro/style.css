@@ -1,0 +1,148 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+.panels {
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 3px grey;
+}
+
+/* Estilos para a div referente a vida do jogador e do monstro */
+
+.vidas {
+    display: flex;
+}
+
+.score {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lifeBar {
+    width: 80%;
+    height: 20px;
+    border: solid 1px black;
+}
+
+.lifeBar .life {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    /* ocupar toda a área do elemento pai na altura */
+    background-color: lime;
+}
+
+.lifeBar .life.vidaBaixa {
+    background-color: red;
+}
+
+.progresso {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+/* Estilos para controlar a div de resultado final do jogo */
+
+.resultado {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.resultado .win {
+    color: green;
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.3);
+}
+
+.resultado .lose {
+    color: red;
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.3);
+}
+
+/* Estilo para controlar os botões relacionados às interações dentro do jogo */
+
+.controles {
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    height: 40px;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    margin: 0px 20px;
+    box-shadow: 2px 2px 3px grey;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: solid 2px black;
+}
+
+.botao:hover {
+    background-color: skyblue;
+}
+
+.b1 {
+    background-color: red;
+    color: white;
+}
+
+.b2 {
+    background-color: orange;
+    color: white;
+}
+
+.b3 {
+    background-color: green;
+    color: white;
+}
+
+.b4 {
+    background-color: grey;
+    color: white;
+}
+
+.b5 {
+    background-color: blue;
+    color: white;
+}
+
+/* Estilos relacionados aos logs de dano */
+
+.logs ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0px;
+}
+
+.logs ul li {
+    display: flex;
+    justify-content: center;
+    margin: 4px 0px;
+    padding: 4px 0px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.player {
+    background-color: rgba(103, 103, 226, 0.6);
+    color: white;
+}
+
+.monster {
+    background-color: rgba(226, 103, 103, 0.6);
+    color: white;
+}

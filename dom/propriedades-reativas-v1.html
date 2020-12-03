@@ -1,0 +1,18 @@
+<!-- Two-way data binding com v-model - as atualizações funcionam da instância vue/framework para o HTML e vice-versa -->
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="app">
+    <p>{{ titulo }}</p>
+    <!-- <input type="text" v-bind:value="titulo" v-on:input="titulo = $event.target.value"> -->
+    <input type="text" v-model="titulo"> <!-- opção mais eficaz -->
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            titulo: 'Usando VueJS!'
+        }
+    })
+</script>
